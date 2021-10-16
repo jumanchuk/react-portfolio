@@ -1,4 +1,5 @@
 import React from 'react';
+import {CartWidget} from '../components/CartWidget';
 
 export const Navbar = () => {
 
@@ -17,25 +18,22 @@ export const Navbar = () => {
                         <a className="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">Hombres</a>
+                        <a className="nav-link active" aria-current="page" href="#">Man</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">Mujeres</a>
+                        <a className="nav-link active" aria-current="page" href="#">Woman</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">Niños</a>
+                        <a className="nav-link active" aria-current="page" href="#">Childs</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">Deporte</a>
+                        <a className="nav-link active" aria-current="page" href="#">Sports</a>
                         </li>
                         <li className="nav-item">
                         <a className="nav-link active" aria-current="page" href="#">Outlet</a>
                         </li>               
                     </ul>
-                    <form className="d-flex">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                        <button className="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                        <CartWidget />
                     </div>
                 </div>
             </nav>

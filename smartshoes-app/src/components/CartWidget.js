@@ -1,13 +1,8 @@
 import React from 'react'
+import { BsCart } from 'react-icons/bs';
 
 export const CartWidget = ({icon}) => {
     return (
-        <a href="">
-            <img 
-            src="../img/cart-icon.png"
-            width="55px"
-            alt="" 
-            />
-        </a>
+        <a href="" className="btn-cart"><BsCart size={'35px'} /></a>
     )
 }

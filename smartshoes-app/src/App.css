@@ -63,7 +63,7 @@
 /* ItemListContainer */
 .ItemList-component__container {
   background-color: aliceblue !important;
-  min-height: 155px !important;
+  min-height: 100px !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,5 +77,24 @@
   text-align: center;
   font-size: 2rem;
   color: #6e7777 !important;
+}
+
+.btn-cart {
+  text-decoration: none !important;
+  color: #444444 !important;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.btn-cart:hover {
+  color: #969696 !important;
+}
+
+.cards-container {
+  padding: 50px;
+}
+
+.cards-container div {
+  display: inline-block;
 }
 /*# sourceMappingURL=App.css.map */

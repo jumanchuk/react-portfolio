@@ -45,7 +45,7 @@
   &__container{
 
       background-color: aliceblue !important;
-      min-height: 155px !important;
+      min-height: 100px !important;
       display: flex;
       align-items: center;
       
@@ -57,5 +57,28 @@
     font-size: 2rem;
     color:rgb(110, 119, 119) !important;
   }
+
+}
+
+.btn-cart {
+  
+  text-decoration: none !important;
+  color: #444444 !important;
+  margin-right: 20px;
+  margin-left: 20px;
+  &:hover {
+    color: #969696 !important;
+  }
+
+}
+
+.cards-container {
+
+  padding: 50px;
+
+  & div{
+    display: inline-block;
+  }
+
 
 }

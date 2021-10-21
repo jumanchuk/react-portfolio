@@ -1,37 +1,41 @@
 import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
 
-export const Carousel = () => {
+export const CarouselBootstrap = () => {
 
 return (
     
-<div id="carouselControls" className="carousel slide" data-ride="carousel">
+ <Carousel fade>
+    <Carousel.Item>
+        <img
+        className="d-block w-100"
+        src="./img/carousel/img-carousel-2.png"
+        alt="First slide"
+        />
+    </Carousel.Item>
+    <Carousel.Item>
+        <img
+        className="d-block w-100"
+        src="./img/carousel/img-carousel-1.png"
+        alt="Second slide"
+        />
+    </Carousel.Item>
+    <Carousel.Item>
+        <img
+        className="d-block w-100"
+        src="./img/carousel/img-carousel-5.png"
+        alt="Third slide"
+        />
 
-  <div className="carousel-inner" role="listbox" aria-label="carousel">
-        <div className="carousel-item active">
-            <div className="img" ><img className="d-block img-fluid" src="./img/carousel/img-carousel-2.png" alt="First slide"/></div>
-        </div>
-        <div className="carousel-item">
-            <div className="img"><img className="d-block img-fluid" src="./img/carousel/img-carousel-2.png" alt="Second slide"/></div>
-        </div>
-        <div className="carousel-item">
-            <div className="img"><img className="d-block img-fluid" src="./img/carousel/img-carousel-1.png" alt="Third slide"/></div>
-        </div>
-  </div>
-
-  <a className="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="sr-only">Previous</span>
-  </a>
-
-  <a className="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="sr-only">Next</span>
-  </a>
-
-</div>
+        {/*       <Carousel.Caption>
+        <h3>Third slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </Carousel.Caption>*/}
+    </Carousel.Item>
+ </Carousel>
 
 )
 
 }
 
-export default Carousel
+export default CarouselBootstrap

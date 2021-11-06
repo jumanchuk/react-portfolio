@@ -178,7 +178,7 @@ const data =[{
                 stock: 10
               },
            {
-              id: 18,
+              id: 21,
               category: 3,
               name: 'Lorem',
               description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -187,7 +187,7 @@ const data =[{
               stock: 10
             },
             {
-               id: 21,
+               id: 22,
                category: 3,
                name: 'Lorem',
                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -196,7 +196,7 @@ const data =[{
                stock: 10
              },
              {
-                id: 22,
+                id: 23,
                 category: 3,
                 name: 'Lorem',
                 description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -205,7 +205,7 @@ const data =[{
                 stock: 10
               },
               {
-                 id: 23,
+                 id: 24,
                  category: 3,
                  name: 'Lorem',
                  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -214,7 +214,7 @@ const data =[{
                  stock: 10
                },
                {
-                  id: 24,
+                  id: 25,
                   category: 3,
                   name: 'Lorem',
                   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',

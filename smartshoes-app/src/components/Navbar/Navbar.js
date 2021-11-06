@@ -1,7 +1,6 @@
 import React from 'react';
 import {CartWidget} from '../CartWidget/CartWidget';
 import  Nav from 'react-bootstrap/esm/Nav';
-import Carousel from '../Carousel/Carousel';
 import  Navbar  from 'react-bootstrap/esm/Navbar';
 import  NavDropdown  from 'react-bootstrap/esm/NavDropdown';
 import { LinkContainer } from 'react-router-bootstrap';
@@ -24,13 +23,14 @@ export const NavbarBootstrap = () => {
                 >
 
 
-                <LinkContainer to="/home">
+                <LinkContainer to="/">
                 <Nav.Link>
                 <img width="70px" height="auto" className="img-responsive" src="/img/logo192.png"  alt="logo" />         
                 </Nav.Link> 
                 </LinkContainer>
- 
-
+                <LinkContainer to="/Home">
+                <Nav.Link>Home</Nav.Link>
+                </LinkContainer>
                 <LinkContainer to="/category/1">
                 <Nav.Link>Man</Nav.Link>
                 </LinkContainer>

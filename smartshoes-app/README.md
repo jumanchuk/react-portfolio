@@ -1,5 +1,68 @@
 <h1 align="center">E-commerce Project - CoderHouse</h1>
 
+:star: Star us on GitHub — it motivates us a lot!
+
+SMARTSHOES is an ecommerce, specialized in the sale of last generation sports shoes.
+
+(https://raw.githubusercontent.com/jumanchuk/react-portfolio/main/smartshoes-app/public/img/demo1.png)
+</br></br>
+(https://raw.githubusercontent.com/jumanchuk/react-portfolio/main/smartshoes-app/public/img/demo1.png)
+
+## Features & Upcoming
+
+- Filter by categories: taking the categories from the database, product filters are generated.
+- Cart: full view account of the items in the cart, its total, and the option to remove a product from the cart.
+- Product list views: product overview with photo and minimal details.
+- Details view: view with all the details of the product and the option to add a quantity of it.
+- Stock control: Check that users cannot add more items to the cart than are available, and check the actual stock at the time of generating the purchase.
+
+## Instalación
+
+1. Fork and clone the repository
+
+2. On the root of the project, run the following command:
+
+   ```bash
+   npm install
+   ```
+
+    para instalar todas las dependecias del proyecto
+
+3. Usá 
+
+   ```bash
+   npm start
+   ```
+
+## Dependencies
+
+* Using React Bootstrap to format the application.
+* Using React Router Dom for navigation
+
+Here is the full list of dependencies:
+
+```bash
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "bootstrap": "^5.1.3",
+    "font-awesome": "^4.7.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0-rc.1",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
+```
+
+### Autor
+
+Jury Alejandro Umanchuk Akuliw
+
+2021 - React CoderHouse
+
 - 📫 How to reach me **juryumanchuk@gmail.com**
 
 <h3 align="left">Connect with me:</h3>

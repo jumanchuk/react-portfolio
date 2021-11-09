@@ -1,7 +1,7 @@
 const data =[{
     id: 1,
     category: 1,
-    name: 'Lorem',
+    name: 'Nike Revolution',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     price: 49.99,
     img: '/img/products/ssh-0001.png',

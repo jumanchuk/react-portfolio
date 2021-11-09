@@ -9,9 +9,7 @@ const ItemListContainer = (props) => {
     const [products,setProducts] = useState([]);
     const { categoryId } = useParams([]);
     const [loading,setLoading] = useState(true);
-
-    console.log(categoryId);
-
+    
     /*  */
     useEffect(() => {
         const productList = new Promise((resolve, reject) => {

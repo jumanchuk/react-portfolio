@@ -5,12 +5,13 @@ import CardGroup from 'react-bootstrap/CardGroup'
 import Container from 'react-bootstrap/Container'
 
 const ItemList = ({products}) => {
+  debugger;
   return (
     <>
       <Container fluid className="CardContainer">
       <CardGroup className="cardsGroup">
         {products.map((product)=>
-          <Item id={product.id} name={product.name} description={product.description} price={product.price} img={product.img} stock={product.stock}/>
+          <Item key={product.id} id={product.id} name={product.name} description={product.description} price={product.price} img={product.img} stock={product.stock}/>
         )}
       </CardGroup>
       </Container>

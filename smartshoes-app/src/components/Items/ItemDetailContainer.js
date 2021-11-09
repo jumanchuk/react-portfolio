@@ -11,8 +11,8 @@ const ItemDetailContainer = (props) => {
     const { ItemId } = useParams([]);
     const [loading,setLoading] = useState(true);
 
-    console.log(ItemId);
-
+    console.log('ItemId:' + ItemId);
+    
     /*  */
     useEffect(() => {
         const selectItem = new Promise((resolve, reject) => {

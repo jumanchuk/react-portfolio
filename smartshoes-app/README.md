@@ -16,19 +16,17 @@ SMARTSHOES is an ecommerce, specialized in the sale of last generation sports sh
 - Details view: view with all the details of the product and the option to add a quantity of it.
 - Stock control: Check that users cannot add more items to the cart than are available, and check the actual stock at the time of generating the purchase.
 
-## Instalación
+## Installation
 
 1. Fork and clone the repository
 
-2. On the root of the project, run the following command:
+2. On the root of the project, run the following command to install all project dependencies:
 
    ```bash
    npm install
    ```
 
-    para instalar todas las dependecias del proyecto
-
-3. Usá 
+3. Then use the following command to start the application:
 
    ```bash
    npm start

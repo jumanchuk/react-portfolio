@@ -1,42 +1,41 @@
 import React, {useState,useEffect} from 'react'
-/* useState: - useEffect: */
-import  ItemList  from './ItemList/ItemList';
+import  ItemListPromo  from './ItemList/ItemListPromo';
 import data from '../../db/data';
-import { useParams } from 'react-router-dom';
 import LoadingImage from '../LoadingImage/LoadingImage';
 
-const ItemListContainer = (props) => {
+const ItemListPromoContainer = ({props}) => {
+    debugger;
+    
     const [products,setProducts] = useState([]);
-    const { categoryId } = useParams([]);
     const [loading,setLoading] = useState(true);
     
     /*  */
     useEffect(() => {
+
         const productList = new Promise((resolve, reject) => {
             setLoading(true);
             setTimeout(() =>{
                 resolve(data)
-            },1000)
+            },3000)
         })
 
         productList.then((data) =>{
-            categoryId ? setProducts(data.filter(i => i.category === parseInt(categoryId)))
-            : setProducts(data);
+            setProducts(data.filter(i => i.promo === true))
             
         }).finally(() =>setLoading(false));
 
-    },[categoryId])
+    },[])
 
 
     return (
         <>
             {
-                loading ? <LoadingImage/> : <ItemList products={products} />
+                loading ? <LoadingImage/> : <ItemListPromo products={products} />
             }
         </>
     )
 }
 
-export default ItemListContainer
+export default ItemListPromoContainer
 
 

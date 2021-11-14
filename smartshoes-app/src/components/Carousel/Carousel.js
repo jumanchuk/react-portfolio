@@ -5,7 +5,7 @@ export const CarouselBootstrap = () => {
 
 return (
     
- <Carousel fade>
+ <Carousel fade style={{ marginBottom: '40px'}}>
     <Carousel.Item>
         <img
         className="d-block w-100"

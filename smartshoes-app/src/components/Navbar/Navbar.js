@@ -11,7 +11,7 @@ export const NavbarBootstrap = () => {
     return (
 
             <>
-
+            <CartWidget/>
             <Navbar bg="light" expand="lg">
 
             <Navbar.Toggle aria-controls="navbarScroll" style={{ marginLeft: "20px" }}/>
@@ -38,7 +38,7 @@ export const NavbarBootstrap = () => {
                 <Nav.Link>Woman</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to="/category/3">
-                <Nav.Link>Children</Nav.Link>
+                <Nav.Link>Kids</Nav.Link>
                 </LinkContainer>
                 <NavDropdown title="Sports" id="navbarScrollingDropdown">
                     <LinkContainer to="/category/4">
@@ -53,8 +53,8 @@ export const NavbarBootstrap = () => {
                 </LinkContainer>
                 </Nav>
             </Navbar.Collapse>
-            <CartWidget className="justify-content-end" />
             </Navbar>
+            
             </>
     )
 

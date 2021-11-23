@@ -165,6 +165,10 @@
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.close{
+  cursor: pointer;
+}        
+
 .colors {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;

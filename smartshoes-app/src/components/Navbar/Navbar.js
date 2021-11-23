@@ -1,5 +1,5 @@
 import React from 'react';
-import {CartWidget} from '../CartWidget/CartWidget';
+import {CartWidget} from '../cartWidget/CartWidget';
 import  Nav from 'react-bootstrap/esm/Nav';
 import  Navbar  from 'react-bootstrap/esm/Navbar';
 import  NavDropdown  from 'react-bootstrap/esm/NavDropdown';

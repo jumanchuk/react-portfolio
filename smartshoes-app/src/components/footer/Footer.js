@@ -14,16 +14,16 @@ export const FooterBootstrap = () => {
     </div>
 
     <div>
-      <a href="" className="me-4 text-reset">
+      <a href="/Home" className="me-4 text-reset">
         <BsFacebook size={'35px'} />
       </a>
-      <a href="" className="me-4 text-reset">
+      <a href="/Home" className="me-4 text-reset">
         <BsTwitter size={'35px'} />      
       </a>
-      <a href="" className="me-4 text-reset">
+      <a href="/Home" className="me-4 text-reset">
         <BsGoogle size={'35px'} />      
       </a>
-      <a href="" className="me-4 text-reset">
+      <a href="/Home" className="me-4 text-reset">
         <BsInstagram size={'35px'} />      
       </a>
     </div>
@@ -34,11 +34,10 @@ export const FooterBootstrap = () => {
       <div className="row mt-3">
         <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <h6 className="text-uppercase fw-bold mb-4">
-            <BsGem size={'15px'} />Smart Shoes
+            <BsGem size={'15px'} /> Smart Shoes
           </h6>
           <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
+            We are International company specialized in selling Sports Shoes.
           </p>
         </div>
 
@@ -65,16 +64,16 @@ export const FooterBootstrap = () => {
             Useful links
           </h6>
           <p>
-            <a href="#!" className="text-reset">Work Whith Us</a>
+            <a href="/Home" className="text-reset">Work Whith Us</a>
           </p>
           <p>
-            <a href="#!" className="text-reset">Settings</a>
+            <a href="/Home" className="text-reset">Settings</a>
           </p>
           <p>
-            <a href="#!" className="text-reset">Orders</a>
+            <a href="/Home" className="text-reset">Orders</a>
           </p>
           <p>
-            <a href="#!" className="text-reset">Help</a>
+            <a href="/Home" className="text-reset">Help</a>
           </p>
         </div>
 

@@ -204,6 +204,10 @@
           flex-direction: column;
 }
 
+.close {
+  cursor: pointer;
+}
+
 .colors {
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;

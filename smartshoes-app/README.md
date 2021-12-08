@@ -7,14 +7,12 @@ SMARTSHOES is an ecommerce, specialized in the sale of last generation sports sh
 <img src="https://raw.githubusercontent.com/jumanchuk/react-portfolio/main/smartshoes-app/public/img/demo1.gif" alt="Mockup" border="0">
 </br></br>
 <img src="https://raw.githubusercontent.com/jumanchuk/react-portfolio/main/smartshoes-app/public/img/demo2.gif" alt="Mockup" border="0">
+</br></br>
+<img src="https://raw.githubusercontent.com/jumanchuk/react-portfolio/main/smartshoes-app/public/img/demo3.gif" alt="Mockup" border="0">
 
 ## Features & Upcoming
 
-- Filter by categories: taking the categories from the database, product filters are generated.
-- Cart: full view account of the items in the cart, its total, and the option to remove a product from the cart.
-- Product list views: product overview with photo and minimal details.
-- Details view: view with all the details of the product and the option to add a quantity of it.
-- Stock control: Check that users cannot add more items to the cart than are available, and check the actual stock at the time of generating the purchase.
+- Login Module
 
 ## Installation
 

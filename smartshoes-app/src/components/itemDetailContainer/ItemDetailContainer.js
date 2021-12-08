@@ -13,8 +13,6 @@ const ItemDetailContainer = (props) => {
     const { ItemId } = useParams([]);
     const [loading,setLoading] = useState(true);
 
-    console.log('ItemId:' + ItemId);
-
     useEffect(() => {
         setLoading(true);
 
@@ -26,7 +24,7 @@ const ItemDetailContainer = (props) => {
                 setItem(results);
             }).finally(() => 
                 setLoading(false));
-    }, []);
+    }, [ItemId]);
 
     return (
         <>

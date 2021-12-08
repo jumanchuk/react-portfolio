@@ -16,3 +16,16 @@ code {
   color: red;
 }
 
+.notification-alert {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 500ms;
+}
+
+.orderPlaced{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color:rgb(104, 104, 104);
+}

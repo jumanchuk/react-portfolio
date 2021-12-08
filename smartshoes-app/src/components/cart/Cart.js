@@ -21,7 +21,7 @@ const Cart = () => {
                     
                     {items > 0 ? cart.map((item)=>
                         <CartItem id={item.id} name={item.name} img={item.img} price={item.price} subtotal={item.subtotal} qty={item.qty} />
-                    ):"NO HAY ITEMS EN EL CARRITO"}
+                    ):"Your Cart 🛒 is Empty 🥺"}
 
                 </div>
             </div>
@@ -32,14 +32,16 @@ const Cart = () => {
                     <div class="d-flex justify-content-between align-items-center">
                         <div> <Link to='/Home'><span class="btn btn-sm bg-light border border-dark">GO BACK</span></Link> </div>
                         <div> <button class="btn btn-sm bg-light border border-dark" onClick={clearAllItem} hidden={items<1}> EMPTY CART</button> </div>
-                        <div class="px-md-0 px-1" id="footer-font" hidden={items<1}> <b class="pl-md-4">TOTAL<span class="pl-md-4">  ${Math.round(total * 100)/100}</span></b> </div>
-                        <div> <button class="btn btn-sm bg-dark text-white px-lg-5 px-3" hidden={items<1}>CONTINUE</button> </div>
+                        <div class="px-md-0 px-1" id="footer-font" hidden={items<1}> <b class="pl-md-4">Total<span class="pl-md-4">  ${Math.round(total * 100)/100}</span></b> </div>
+                        <Link to='/CheckOut'><button class="btn btn-sm bg-dark text-white px-lg-5 px-3" hidden={!items}>Continue</button></Link>
                     </div>
                 </div>
             </div>
         </div>
         </>
   )
+
+
 }
 
 export default Cart 

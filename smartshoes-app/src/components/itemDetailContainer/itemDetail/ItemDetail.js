@@ -1,5 +1,6 @@
 
-import React, {useState, useContext}  from 'react'
+import React, {useState, useContext}  from 'react';
+import Alert from 'react-bootstrap/Alert';
 import ItemCount from '../../itemCount/ItemCount';
 import { Link } from 'react-router-dom';
 import { Context } from '../../../context/CartConext';
@@ -8,12 +9,16 @@ const ItemDetail = ({id,name,description,price,img,stock}) => {
 
       const [buy, setBuy] = useState(false);
       const {onAdd} = useContext(Context)
-  
+      const [show, setShow] = useState(false);
+
       const addItem = (props) => {
           setBuy(true)
           debugger;
           onAdd({id,name,description,price,img},props.qty)
-          alert(props.qty +' Item(s) Added Successfully to the cart')
+          if(!show){
+            setShow(true)
+            setTimeout(() => setShow(false), 2000);
+          }
       }
 
       return (
@@ -21,6 +26,9 @@ const ItemDetail = ({id,name,description,price,img,stock}) => {
               <div className="container">
                   <div className="cardDetail">
                       <div className="container-fliud">
+                        <Alert variant="success" hidden={!show} data-dismiss="alert">
+                            <Alert.Heading>🎉 Great! Item Added Successfully</Alert.Heading>
+                        </Alert>
                           <div className="wrapper row">
                               <div className="preview col-md-6">
                                   

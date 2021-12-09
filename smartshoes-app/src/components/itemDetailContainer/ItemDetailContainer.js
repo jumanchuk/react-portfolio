@@ -5,7 +5,7 @@ import  ItemDetail  from './itemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
 import LoadingImage from '../LoadingImage/LoadingImage';
 
-import db from '../firebase/firebase';
+import {db} from '../firebase/firebase';
 import { doc, getDoc } from 'firebase/firestore';
 
 const ItemDetailContainer = (props) => {

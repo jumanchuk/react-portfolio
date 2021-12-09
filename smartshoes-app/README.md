@@ -4,10 +4,6 @@
 
 SMARTSHOES is an ecommerce, specialized in the sale of last generation sports shoes.
 
-<img src="https://raw.githubusercontent.com/jumanchuk/react-portfolio/main/smartshoes-app/public/img/demo1.gif" alt="Mockup" border="0">
-</br></br>
-<img src="https://raw.githubusercontent.com/jumanchuk/react-portfolio/main/smartshoes-app/public/img/demo2.gif" alt="Mockup" border="0">
-</br></br>
 <img src="https://raw.githubusercontent.com/jumanchuk/react-portfolio/main/smartshoes-app/public/img/demo3.gif" alt="Mockup" border="0">
 
 ## Features & Upcoming

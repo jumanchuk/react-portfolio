@@ -1,6 +1,5 @@
 
 import React, {useState, useContext}  from 'react';
-import Alert from 'react-bootstrap/Alert';
 import ItemCount from '../../itemCount/ItemCount';
 import { Link } from 'react-router-dom';
 import { Context } from '../../../context/CartConext';
@@ -26,9 +25,6 @@ const ItemDetail = ({id,name,description,price,img,stock}) => {
               <div className="container">
                   <div className="cardDetail">
                       <div className="container-fliud">
-                        <Alert variant="success" hidden={!show} data-dismiss="alert">
-                            <Alert.Heading>🎉 Great! Item Added Successfully</Alert.Heading>
-                        </Alert>
                           <div className="wrapper row">
                               <div className="preview col-md-6">
                                   

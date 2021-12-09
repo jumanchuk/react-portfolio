@@ -1,17 +1,13 @@
 import React, {useState} from "react";
+import Swal from 'sweetalert2';
+
 const Context = React.createContext();
 
 const CartFunction = ({children})=>{
 
         const [cart,setCart] = useState([])
-        const [userInfo,setUserInfo] = useState([])
         const [items,setItems] = useState(0)
         const [total, setTotal] = useState(0)
-
-        const onSubmit = (props) => {
-            debugger;
-            setUserInfo(props);
-        }
 
         const onAdd = (product, qty) => {
 
@@ -34,6 +30,14 @@ const CartFunction = ({children})=>{
                 setCart(cartAux)
                 setTotal(total+(product.price*qty))
             }
+            
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Agregado al carrito',
+                showConfirmButton: false,
+                timer: 1500
+              });
         }
 
         const clearAllItem = () => {
@@ -53,7 +57,7 @@ const CartFunction = ({children})=>{
             setTotal(total-item[0].subtotal)
         }
 
-        return <Context.Provider value={{cart,items,total,userInfo, onAdd, clearAllItem, DeleteItem, onSubmit}}>
+        return <Context.Provider value={{cart,items,total, onAdd, clearAllItem, DeleteItem}}>
                     {children}
                </Context.Provider>
 }

@@ -9,7 +9,6 @@ import ItemDetailContainer from './components/itemDetailContainer/ItemDetailCont
 import Container from 'react-bootstrap/Container';
 import Carousel from './components/carousel/Carousel';
 import CheckOut from './components/cart/CheckOut/CheckOut';
-import PlaceOrder from './components/cart/PlaceOrder/PlaceOrder';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -56,9 +55,6 @@ function App() {
                 </Route>
                 <Route exact path="/CheckOut">
                   <CheckOut/>
-                </Route>
-                <Route exact path="/PlaceOrder">
-                  <PlaceOrder/>
                 </Route>
             </Switch>
             </CartFunction>

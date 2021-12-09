@@ -5,7 +5,7 @@ import  ItemList  from './ItemList/ItemList';
 import { useParams } from 'react-router-dom';
 import LoadingImage from '../LoadingImage/LoadingImage';
 
-import db from '../firebase/firebase';
+import {db} from '../firebase/firebase';
 import { collection, query, where, getDocs } from 'firebase/firestore';
 
 export const ItemListContainer = (props) => {

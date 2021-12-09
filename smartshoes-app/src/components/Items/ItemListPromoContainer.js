@@ -2,7 +2,7 @@ import React, {useState,useEffect} from 'react'
 import  ItemListPromo  from './ItemList/ItemListPromo';
 /*import data from '../../db/data';*/
 import LoadingImage from '../LoadingImage/LoadingImage';
-import db from '../firebase/firebase';
+import {db} from '../firebase/firebase';
 import { collection, query, where, getDocs } from 'firebase/firestore';
 
 const ItemListPromoContainer = ({props}) => {

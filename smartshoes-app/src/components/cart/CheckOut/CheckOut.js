@@ -5,7 +5,7 @@ import 'firebase/firestore';
 import {db,getCollection} from '../../firebase/firebase';
 import { addDoc } from "firebase/firestore";
 import Swal from 'sweetalert2';
-import { Link } from 'react-router-dom';
+import { Link,useHistory  } from 'react-router-dom';
 
 const CheckOut = () => {
 
@@ -14,7 +14,7 @@ const CheckOut = () => {
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const {cart,total} = useContext(Context);
-    const {completed,setCompleted} = useState(false);
+    const {completed,setCompleted} = useContext(Context);
 
     const PlaceOrder = async () => {
         debugger;
@@ -44,14 +44,20 @@ const CheckOut = () => {
               debugger;
               if (addProducts?._key?.path?.segments?.[1] !== '') {
                 debugger;
+
+
+
                 Swal.fire(
                     'Success!!',
                     'The purchase has been made successfully',
                     'success'
-                  ); 
+                  )
 
-                clearAllItem();
-                setCompleted(true);
+                  clearAllItem();
+                  routeChange();
+                  debugger;
+                  
+
 
               }
             } catch (error) {
@@ -59,6 +65,16 @@ const CheckOut = () => {
               console.log(error);
             }
           };
+
+          const history = useHistory();
+
+          const routeChange = () =>{ 
+            let path = '/OrderSuccess'; 
+            
+            setTimeout(() => {
+              history.push(path);
+            }, 800)
+          }
 
   return (
     <>  
@@ -83,7 +99,7 @@ const CheckOut = () => {
                 onChange={e => setPhone(e.target.value)}
                  />
             </Form.Group>
-            {<Link to="/CheckOut"><button className="btn btn-sm bg-dark text-white px-lg-5 px-3" variant="outline-success" onClick={evt => PlaceOrder(evt)} wait='5000'>Continue</button></Link>} 
+            {<Link to="#"><button className="btn btn-sm bg-dark text-white px-lg-5 px-3" variant="outline-success" onClick={evt => PlaceOrder(evt)} >Continue</button></Link>} 
         </Form>
         </div>
     </>

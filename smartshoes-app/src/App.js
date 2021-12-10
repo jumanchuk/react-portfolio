@@ -9,6 +9,7 @@ import ItemDetailContainer from './components/itemDetailContainer/ItemDetailCont
 import Container from 'react-bootstrap/Container';
 import Carousel from './components/carousel/Carousel';
 import CheckOut from './components/cart/CheckOut/CheckOut';
+import OrderSuccess from './components/cart/OrderSuccess/OrderSuccess';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -55,6 +56,9 @@ function App() {
                 </Route>
                 <Route exact path="/CheckOut">
                   <CheckOut/>
+                </Route>
+                <Route exact path="/OrderSuccess">
+                  <OrderSuccess/>
                 </Route>
             </Switch>
             </CartFunction>
